@@ -24,10 +24,10 @@ Partial Class frmStartUp
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmStartUp))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblStartUp = New System.Windows.Forms.Label()
-        Me.txtUserName = New System.Windows.Forms.TextBox()
-        Me.lblAdd = New System.Windows.Forms.Label()
         Me.btnStart = New System.Windows.Forms.Button()
+        Me.lblAdd = New System.Windows.Forms.Label()
+        Me.txtUserName = New System.Windows.Forms.TextBox()
+        Me.lblStartUp = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,39 +45,6 @@ Partial Class frmStartUp
         Me.Panel1.Size = New System.Drawing.Size(859, 461)
         Me.Panel1.TabIndex = 0
         '
-        'lblStartUp
-        '
-        Me.lblStartUp.AutoSize = True
-        Me.lblStartUp.BackColor = System.Drawing.Color.Transparent
-        Me.lblStartUp.Font = New System.Drawing.Font("Segoe Print", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStartUp.ForeColor = System.Drawing.Color.Maroon
-        Me.lblStartUp.Location = New System.Drawing.Point(313, 15)
-        Me.lblStartUp.Name = "lblStartUp"
-        Me.lblStartUp.Size = New System.Drawing.Size(216, 47)
-        Me.lblStartUp.TabIndex = 0
-        Me.lblStartUp.Text = "My Corkboard"
-        '
-        'txtUserName
-        '
-        Me.txtUserName.BackColor = System.Drawing.Color.White
-        Me.txtUserName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtUserName.Location = New System.Drawing.Point(309, 149)
-        Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(194, 20)
-        Me.txtUserName.TabIndex = 1
-        '
-        'lblAdd
-        '
-        Me.lblAdd.AutoSize = True
-        Me.lblAdd.BackColor = System.Drawing.Color.Transparent
-        Me.lblAdd.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAdd.ForeColor = System.Drawing.Color.Maroon
-        Me.lblAdd.Location = New System.Drawing.Point(291, 124)
-        Me.lblAdd.Name = "lblAdd"
-        Me.lblAdd.Size = New System.Drawing.Size(224, 15)
-        Me.lblAdd.TabIndex = 2
-        Me.lblAdd.Text = "Enter your name to get started"
-        '
         'btnStart
         '
         Me.btnStart.BackColor = System.Drawing.Color.Transparent
@@ -91,6 +58,39 @@ Partial Class frmStartUp
         Me.btnStart.TabIndex = 3
         Me.btnStart.Text = "Start"
         Me.btnStart.UseVisualStyleBackColor = False
+        '
+        'lblAdd
+        '
+        Me.lblAdd.AutoSize = True
+        Me.lblAdd.BackColor = System.Drawing.Color.Transparent
+        Me.lblAdd.Font = New System.Drawing.Font("Lucida Sans", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAdd.ForeColor = System.Drawing.Color.Maroon
+        Me.lblAdd.Location = New System.Drawing.Point(291, 124)
+        Me.lblAdd.Name = "lblAdd"
+        Me.lblAdd.Size = New System.Drawing.Size(224, 15)
+        Me.lblAdd.TabIndex = 2
+        Me.lblAdd.Text = "Enter your name to get started"
+        '
+        'txtUserName
+        '
+        Me.txtUserName.BackColor = System.Drawing.Color.White
+        Me.txtUserName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtUserName.Location = New System.Drawing.Point(309, 149)
+        Me.txtUserName.Name = "txtUserName"
+        Me.txtUserName.Size = New System.Drawing.Size(194, 20)
+        Me.txtUserName.TabIndex = 1
+        '
+        'lblStartUp
+        '
+        Me.lblStartUp.AutoSize = True
+        Me.lblStartUp.BackColor = System.Drawing.Color.Transparent
+        Me.lblStartUp.Font = New System.Drawing.Font("Segoe Print", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStartUp.ForeColor = System.Drawing.Color.Maroon
+        Me.lblStartUp.Location = New System.Drawing.Point(313, 15)
+        Me.lblStartUp.Name = "lblStartUp"
+        Me.lblStartUp.Size = New System.Drawing.Size(216, 47)
+        Me.lblStartUp.TabIndex = 0
+        Me.lblStartUp.Text = "My Corkboard"
         '
         'frmStartUp
         '
