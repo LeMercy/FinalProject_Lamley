@@ -71,6 +71,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNote.Designer.vb">
+      <DependentUpon>AddNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomView.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +106,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NewNote.vb" />
+    <Compile Include="NotesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserDataTable.Designer.vb">
+      <DependentUpon>UserDataTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserDataTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddNote.resx">
+      <DependentUpon>AddNote.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +134,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDataTable.resx">
+      <DependentUpon>UserDataTable.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +150,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="NotesDataSet.xsc">
+      <DependentUpon>NotesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NotesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NotesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NotesDataSet.xss">
+      <DependentUpon>NotesDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
