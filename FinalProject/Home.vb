@@ -42,6 +42,7 @@
                 btnS4N4.Text = AddNote.GetTitle
                 Return
             Else
+
                 'Adds another page
             End If
         ElseIf radEight.Checked Then
